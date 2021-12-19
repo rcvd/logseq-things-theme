@@ -1,4 +1,4 @@
-# Logseq Theme for Logseq
+# Things Theme for Logseq
 > The things you used to own, now they own you.
 
 A [Things](https://culturedcode.com/things/) insprired theme for [Logseq](https://logseq.github.io). Supports light and dark mode.
