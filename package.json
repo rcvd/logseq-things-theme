@@ -1,0 +1,24 @@
+{
+  "name": "Things",
+  "author": "Alexander Rink",
+  "version": "0.0.1",
+  "description": "The things you used to own, now they own you.",
+  "logseq": {
+    "themes": [
+      {
+        "name": "Things - Light",
+        "url": "./things.css",
+        "description": "The things you used to own, now they own you.",
+        "mode": "light"
+      },
+      {
+        "name": "Things - Dark",
+        "url": "./things.css",
+        "description": "The things you used to own, now they own you.",
+        "mode": "dark"
+      }
+    ],
+    "id": "things",
+    "icon": "./icon.png"
+  }
+}
