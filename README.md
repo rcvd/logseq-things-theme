@@ -11,7 +11,7 @@ A [Things](https://culturedcode.com/things/) insprired theme for [Logseq](https:
 ## How to use it
 Add this to your 'custom.css' page in Logseq:
 
-    @import url('https://rcvd.github.io/logseq-things-theme/bear.css');
+    @import url('https://rcvd.github.io/logseq-things-theme/things.css');
 
 ## Screenshots
 ![Light Mode](screenshots/light.png)
