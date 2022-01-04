@@ -373,11 +373,11 @@ html[data-theme=dark] {
 	color: 					var(--cl-steel);
 }
 
-*:is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card) .block-children {
-	border-left: 			var(--cl-aluminium);
+.block-children-left-border {
+	background-color: 		var(--cl-aluminium);
 }
-.dark-theme *:is(*:is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card) .block-children), html[data-theme=dark] *:is(*:is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card) .block-children) {
-	border-left: 			1px solid var(--cl-vulcan);
+.dark-theme .block-children-left-border,  html[data-theme=dark] .block-children-left-border {
+	background-color: 		var(--cl-vulcan);
 }
 
 *:is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card) blockquote {
@@ -3699,4 +3699,12 @@ html {
 
 .text-sm {
 	font-size: 1rem;
+}
+
+.blocks-container .items-baseline {
+	align-items: self-end;
+}
+
+.block-control, .block-control:hover {
+	min-height: unset;
 }
