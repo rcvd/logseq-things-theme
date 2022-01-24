@@ -1079,6 +1079,10 @@ html[data-theme=dark] {
 	background-color: 		var(--cl-gray);
 }
 
+html[data-theme=dark] ::-webkit-scrollbar-thumb {
+	background-color: 		var(--cl-gray);
+}
+
 *:is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card) a.tag:hover {
 	background-color: 		var(--cl-edgewater);
 	border-top: 			transparent;
@@ -1802,6 +1806,9 @@ a svg {
 	color: 					var(--cl-lightgray);
 }
 
+.dark-theme #left-sidebar .new-page {
+	background-color: 		transparent;
+}
 #left-sidebar .new-page a.item:hover {
 	background-color: 		transparent;
 	border-top: 			transparent;
