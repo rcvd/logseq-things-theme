@@ -3402,7 +3402,7 @@ a svg {
 }
 
 .ui__modal-panel .panel-content::-webkit-scrollbar-track {
-	background-color: 		var(--cl-fadedwhite);
+	background-color: 		var(--cl-whitesmoke);
 }
 .dark-theme .ui__modal-panel .panel-content::-webkit-scrollbar-track,  html[data-theme=dark] .ui__modal-panel .panel-content::-webkit-scrollbar-track {
 	background-color: 		var(--cl-bunker);
