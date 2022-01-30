@@ -355,6 +355,40 @@ html[data-theme=dark] {
 	border-left: 			transparent;
 }
 
+.block-ref {
+	background-color: 		var(--cl-);
+	border-top: 			var(--cl-);
+	border-right: 			var(--cl-);
+	border-bottom: 			1px solid var(--cl-gallery);
+	border-left: 			var(--cl-);
+	color: 					var(--cl-bunker);
+}
+.dark-theme .block-ref,  html[data-theme=dark] .block-ref {
+	background-color: 		var(--cl-);
+	border-top: 			var(--cl-);
+	border-right: 			var(--cl-);
+	border-bottom: 			1px solid var(--cl-jungle);
+	border-left: 			var(--cl-);
+	color: 					var(--cl-white);
+}
+
+.block-ref:hover {
+	background-color: 		var(--cl-);
+	border-top: 			var(--cl-);
+	border-right: 			var(--cl-);
+	border-bottom: 			1px solid var(--cl-gallery);
+	border-left: 			var(--cl-);
+	color: 					var(--cl-aluminium);
+}
+.dark-theme .block-ref:hover,  html[data-theme=dark] .block-ref:hover {
+	background-color: 		var(--cl-);
+	border-top: 			var(--cl-);
+	border-right: 			var(--cl-);
+	border-bottom: 			1px solid var(--cl-jungle);
+	border-left: 			var(--cl-);
+	color: 					var(--cl-steel);
+}
+
 .open-block-ref-link {
 	background-color: 		transparent;
 	border-top: 			transparent;
@@ -481,6 +515,13 @@ div[data-refs-self*='"card"'] {
 	border-left: 			1px solid var(--cl-jungle);
 	box-shadow: 			0 10px 15px -3px rgba(0, 0, 0, 0.1),0 4px 6px -2px rgba(0, 0, 0, 0.05)!important;
 	--webkit-box-shadow: 	0 10px 15px -3px rgba(0, 0, 0, 0.1),0 4px 6px -2px rgba(0, 0, 0, 0.05)!important;
+}
+
+.rotating-arrow svg {
+	color: 					var(--cl-);
+}
+.dark-theme .rotating-arrow svg,  html[data-theme=dark] .rotating-arrow svg {
+	color: 					var(--cl-);
 }
 
 .form-checkbox:checked {
@@ -921,16 +962,20 @@ iframe {
 }
 
 .page-ref:hover {
+	border-bottom: 			var(--cl-);
 	color: 					var(--cl-navy);
 }
 .dark-theme .page-ref:hover,  html[data-theme=dark] .page-ref:hover {
+	border-bottom: 			var(--cl-);
 	color: 					var(--cl-maya);
 }
 
 .page-ref {
+	border-bottom: 			var(--cl-);
 	color: 					var(--cl-navy);
 }
 .dark-theme .page-ref,  html[data-theme=dark] .page-ref {
+	border-bottom: 			var(--cl-);
 	color: 					var(--cl-maya);
 }
 
@@ -1570,6 +1615,7 @@ a svg {
 	border-radius: 			none;
 	color: 					var(--cl-vulcan);
 	font-family: 			-apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;;
+	font-size: 				;
 }
 .dark-theme #left-sidebar .favorites ul .favorite-item a,  html[data-theme=dark] #left-sidebar .favorites ul .favorite-item a {
 	background-color: 		transparent;
@@ -1615,6 +1661,7 @@ a svg {
 #left-sidebar .favorites > div.header a {
 	color: 					var(--cl-vulcan);
 	font-family: 			-apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;;
+	font-size: 				;
 	font-weight: 			;
 	opacity: 				1!important;
 }
@@ -1734,6 +1781,7 @@ a svg {
 #left-sidebar nav[aria-label='Sidebar'] div.relative a span {
 	color: 					var(--cl-vulcan);
 	font-family: 			-apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;;
+	font-size: 				;
 	font-weight: 			;
 }
 .dark-theme #left-sidebar nav[aria-label='Sidebar'] div.relative a span,  html[data-theme=dark] #left-sidebar nav[aria-label='Sidebar'] div.relative a span {
@@ -1796,6 +1844,7 @@ a svg {
 #left-sidebar .nav-header > div a span {
 	color: 					var(--cl-vulcan);
 	font-family: 			-apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;;
+	font-size: 				;
 	font-weight: 			;
 }
 .dark-theme #left-sidebar .nav-header > div a span,  html[data-theme=dark] #left-sidebar .nav-header > div a span {
@@ -1898,6 +1947,7 @@ a svg {
 	border-radius: 			none;
 	color: 					var(--cl-vulcan);
 	font-family: 			-apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;;
+	font-size: 				;
 }
 .dark-theme #left-sidebar .recent ul .recent-item a,  html[data-theme=dark] #left-sidebar .recent ul .recent-item a {
 	background-color: 		transparent;
@@ -1971,6 +2021,7 @@ a svg {
 #left-sidebar .recent > div.header a {
 	color: 					var(--cl-vulcan);
 	font-family: 			-apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;;
+	font-size: 				;
 	font-weight: 			;
 	opacity: 				1!important;
 }
@@ -3466,59 +3517,15 @@ a svg {
 	color: 					var(--cl-white);
 }
 
-/* Remove tailwind formattings */
-.text-sm {
-  font-size: 1em;
+/* Fixes for block alignments */
+#lazy-blocks .flex.pr-2 {
+  justify-content: flex-start!important;
+  align-items: flex-start!important;
 }
 
-/* ------- */
-/*  Menus  */
-/* ------- */
-
-/* Add padding around menus */
-.dropdown-wrapper,
-#custom-context-menu {
-  padding: 4px;
-}
-
-.dropdown-wrapper .py-2,
-#custom-context-menu .py-2,
-#left-sidebar .py-2 {
-  padding-top: 0.4rem;
-  padding-bottom: 0.4rem;
-}
-
-/* Left Sidebar */
-.left-sidebar-inner #repo-name {
-  padding-top: 1px;
-  padding-bottom: 1px;
-}
-
-blockquote {
-  margin-top: -28px !important;
-}
-
-blockquote:before {
-  content: ">";
-  margin-left: -16px;
-  top: 20px;
-  position: relative;
-}
-
-*:is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card).page-reference[data-ref="card"].tag,
-*:is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card)
-  a[data-ref="card"].tag {
-  display: none;
-}
-
-.cm-s-solarized .CodeMirror-linenumber,
-.CodeMirror-gutter-background,
-.cm-s-solarized .CodeMirror-gutters {
-  display: none;
-}
-
-.CodeMirror-sizer {
-  margin-left: 5px !important;
+.block-content,
+textarea {
+  line-height: 24px;
 }
 
 /* Fixes for command palette and search */
@@ -3546,7 +3553,7 @@ blockquote:before {
 
 .ui__modal-panel {
   background: transparent !important;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 /* Hide first, empty item on graph dropdown */
@@ -3636,6 +3643,12 @@ a {
   margin-top: 0px;
 }
 
+.new-page a.item .ti,
+.cp__sidebar-left-layout nav[aria-label="Sidebar"] div.relative a .ti,
+.cp__sidebar-left-layout .nav-header > div a .ti {
+  padding-bottom: 3px;
+}
+
 .white-theme .form-checkbox:checked,
 html[data-theme="light"] .form-checkbox:checked {
   background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23555555' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M5.707 7.293a1 1 0 0 0-1.414 1.414l2 2a1 1 0 0 0 1.414 0l4-4a1 1 0 0 0-1.414-1.414L7 8.586 5.707 7.293z'/%3e%3c/svg%3e");
@@ -3712,15 +3725,7 @@ a.tag {
   background: transparent;
 }
 
-html {
-  font-size: 14px;
-}
-
-.text-sm {
-  font-size: 1rem;
-}
-
-.block-control,
+.block-control, 
 .block-control:hover {
   min-height: unset;
 }
@@ -3737,4 +3742,75 @@ html {
 .block-children-left-border:hover {
   width: 4px;
   left:  -1px;
+}
+
+#logseq-journals-calendar_iframe {
+  background: transparent; 
+}
+/* Remove tailwind formattings */
+.text-sm {
+  font-size: 1em;
+}
+
+/* ------- */
+/*  Menus  */
+/* ------- */
+
+/* Add padding around menus */
+.dropdown-wrapper,
+#custom-context-menu {
+  padding: 4px;
+}
+
+.dropdown-wrapper .py-2,
+#custom-context-menu .py-2,
+#left-sidebar .py-2 {
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+}
+
+/* Left Sidebar */
+.left-sidebar-inner #repo-name {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+
+blockquote {
+  margin-top: -28px !important;
+}
+
+blockquote:before {
+  content: ">";
+  margin-left: -16px;
+  top: 20px;
+  position: relative;
+}
+
+*:is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card).page-reference[data-ref="card"].tag,
+*:is(#main-content-container, #right-sidebar, .tippy-tooltip, .ls-card)
+  a[data-ref="card"].tag {
+  display: none;
+}
+
+.cm-s-solarized .CodeMirror-linenumber,
+.CodeMirror-gutter-background,
+.cm-s-solarized .CodeMirror-gutters {
+  display: none;
+}
+
+.CodeMirror-sizer {
+  margin-left: 5px !important;
+}
+
+.ui__modal-panel {
+  background: transparent !important;
+  border-radius: 5px;
+}
+
+html {
+  font-size: 14px;
+}
+
+.text-sm {
+  font-size: 1rem;
 }
