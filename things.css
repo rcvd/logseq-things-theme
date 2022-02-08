@@ -216,7 +216,7 @@ html[data-theme=dark] {
 	border-right: 			transparent;
 	border-bottom: 			transparent;
 	border-left: 			transparent;
-	border-radius: 			none;
+	border-radius: 			0px;
 	box-shadow: 			none!important;
 	--webkit-box-shadow: 	none!important;
 }
@@ -236,7 +236,7 @@ html[data-theme=dark] {
 	border-right: 			transparent;
 	border-bottom: 			transparent;
 	border-left: 			transparent;
-	border-radius: 			none;
+	border-radius: 			0px;
 	color: 					var(--cl-aluminium)!important;
 }
 .dark-theme *:is(.page-reference[data-ref=card].tag:hover, a[data-ref=card].tag:hover), html[data-theme=dark] *:is(.page-reference[data-ref=card].tag:hover, a[data-ref=card].tag:hover) {
@@ -254,7 +254,7 @@ html[data-theme=dark] {
 	border-right: 			transparent;
 	border-bottom: 			transparent;
 	border-left: 			transparent;
-	border-radius: 			none;
+	border-radius: 			0px;
 	color: 					var(--cl-aluminium)!important;
 }
 .dark-theme *:is(.page-reference[data-ref=card].tag, a[data-ref=card].tag), html[data-theme=dark] *:is(.page-reference[data-ref=card].tag, a[data-ref=card].tag) {
@@ -275,6 +275,7 @@ html[data-theme=dark] {
 
 .block-content .asset-container .ctl>a {
 	background-color: 		var(--cl-zircon);
+	opacity: 				;
 }
 .dark-theme .block-content .asset-container .ctl>a,  html[data-theme=dark] .block-content .asset-container .ctl>a {
 	background-color: 		var(--cl-steel);
@@ -282,6 +283,7 @@ html[data-theme=dark] {
 
 .block-content .asset-container .ctl>a svg {
 	fill: 		var(--cl-boulder);
+	opacity: 				;
 }
 .dark-theme .block-content .asset-container .ctl>a svg,  html[data-theme=dark] .block-content .asset-container .ctl>a svg {
 	fill: 		var(--cl-white);
@@ -326,16 +328,23 @@ html[data-theme=dark] {
 }
 
 .block-parents a.page-ref:hover {
+	background-color: 		var(--cl-);
+	border-bottom: 			var(--cl-);
+	border-radius: 			;
 	color: 					var(--cl-navy);
 }
 .dark-theme .block-parents a.page-ref:hover,  html[data-theme=dark] .block-parents a.page-ref:hover {
+	background-color: 		var(--cl-);
+	border-bottom: 			var(--cl-);
 	color: 					var(--cl-maya);
 }
 
 .block-parents a.page-ref {
+	border-bottom: 			var(--cl-);
 	color: 					var(--cl-navy);
 }
 .dark-theme .block-parents a.page-ref,  html[data-theme=dark] .block-parents a.page-ref {
+	border-bottom: 			var(--cl-);
 	color: 					var(--cl-maya);
 }
 
@@ -345,7 +354,7 @@ html[data-theme=dark] {
 	border-right: 			transparent;
 	border-bottom: 			transparent;
 	border-left: 			transparent;
-	border-radius: 			none;
+	border-radius: 			0px;
 }
 .dark-theme .block-properties,  html[data-theme=dark] .block-properties {
 	background-color: 		transparent;
@@ -395,7 +404,7 @@ html[data-theme=dark] {
 	border-right: 			transparent;
 	border-bottom: 			transparent;
 	border-left: 			transparent;
-	border-radius: 			none;
+	border-radius: 			0px;
 	color: 					var(--cl-bunker);
 }
 .dark-theme .open-block-ref-link,  html[data-theme=dark] .open-block-ref-link {
@@ -420,7 +429,7 @@ blockquote {
 	border-right: 			transparent;
 	border-bottom: 			transparent;
 	border-left: 			transparent;
-	border-radius: 			none;
+	border-radius: 			0px;
 	color: 					var(--cl-ebony);
 	font-family: 			-apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;;
 }
@@ -726,6 +735,7 @@ div[data-refs-self*='"card"'] {
 	background-color: 		var(--cl-white);
 	color: 					var(--cl-fadedblack);
 	font-family: 			-apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;;
+	font-size: 				;
 }
 .dark-theme *:is(*:is(#main-content-container, #right-sidebar)), html[data-theme=dark] *:is(*:is(#main-content-container, #right-sidebar)) {
 	background-color: 		var(--cl-nero);
@@ -780,6 +790,7 @@ div[data-refs-self*='"card"'] {
 
 .external-link:hover {
 	color: 					var(--cl-navy);
+	text-decoration: 		;
 }
 .dark-theme .external-link:hover,  html[data-theme=dark] .external-link:hover {
 	color: 					var(--cl-maya);
@@ -787,6 +798,7 @@ div[data-refs-self*='"card"'] {
 
 .external-link {
 	color: 					var(--cl-navy);
+	text-decoration: 		;
 }
 .dark-theme .external-link,  html[data-theme=dark] .external-link {
 	color: 					var(--cl-maya);
@@ -799,7 +811,7 @@ div[data-refs-self*='"card"'] {
 	color: 					var(--cl-white);
 }
 
-*:is(.editor-inner .h1, .ls-block h1) {
+*:is(.editor-inner .uniline-block.h1, .editor-inner .h1, .ls-block h1) {
 	border-bottom: 			transparent;
 	color: 					var(--cl-shark);
 	font-family: 			-apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;;
@@ -807,12 +819,12 @@ div[data-refs-self*='"card"'] {
 	font-style: 			normal;
 	font-weight: 			500!important;
 }
-.dark-theme *:is(*:is(.editor-inner .h1, .ls-block h1)), html[data-theme=dark] *:is(*:is(.editor-inner .h1, .ls-block h1)) {
+.dark-theme *:is(*:is(.editor-inner .uniline-block.h1, .editor-inner .h1, .ls-block h1)), html[data-theme=dark] *:is(*:is(.editor-inner .uniline-block.h1, .editor-inner .h1, .ls-block h1)) {
 	border-bottom: 			transparent;
 	color: 					var(--cl-white);
 }
 
-*:is(.editor-inner .h2, .ls-block h2) {
+*:is(.editor-inner .uniline-block.h2, .editor-inner .h2, .ls-block h2) {
 	border-bottom: 			transparent;
 	color: 					var(--cl-shark);
 	font-family: 			-apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;;
@@ -820,52 +832,52 @@ div[data-refs-self*='"card"'] {
 	font-style: 			normal;
 	font-weight: 			500!important;
 }
-.dark-theme *:is(*:is(.editor-inner .h2, .ls-block h2)), html[data-theme=dark] *:is(*:is(.editor-inner .h2, .ls-block h2)) {
+.dark-theme *:is(*:is(.editor-inner .uniline-block.h2, .editor-inner .h2, .ls-block h2)), html[data-theme=dark] *:is(*:is(.editor-inner .uniline-block.h2, .editor-inner .h2, .ls-block h2)) {
 	border-bottom: 			transparent;
 	color: 					var(--cl-white);
 }
 
-*:is(.editor-inner .h3, .ls-block h3) {
+*:is(.editor-inner .uniline-block.h3, .editor-inner .h3, .ls-block h3) {
 	color: 					var(--cl-shark);
 	font-family: 			-apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;;
 	font-size: 				1.1em;
 	font-style: 			normal;
 	font-weight: 			500!important;
 }
-.dark-theme *:is(*:is(.editor-inner .h3, .ls-block h3)), html[data-theme=dark] *:is(*:is(.editor-inner .h3, .ls-block h3)) {
+.dark-theme *:is(*:is(.editor-inner .uniline-block.h3, .editor-inner .h3, .ls-block h3)), html[data-theme=dark] *:is(*:is(.editor-inner .uniline-block.h3, .editor-inner .h3, .ls-block h3)) {
 	color: 					var(--cl-white);
 }
 
-*:is(.editor-inner .h4, .ls-block h4) {
+*:is(.editor-inner .uniline-block.h4, .editor-inner .h4, .ls-block h4) {
 	color: 					var(--cl-shark);
 	font-family: 			-apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;;
 	font-size: 				1em;
 	font-style: 			normal;
 	font-weight: 			500!important;
 }
-.dark-theme *:is(*:is(.editor-inner .h4, .ls-block h4)), html[data-theme=dark] *:is(*:is(.editor-inner .h4, .ls-block h4)) {
+.dark-theme *:is(*:is(.editor-inner .uniline-block.h4, .editor-inner .h4, .ls-block h4)), html[data-theme=dark] *:is(*:is(.editor-inner .uniline-block.h4, .editor-inner .h4, .ls-block h4)) {
 	color: 					var(--cl-white);
 }
 
-*:is(.editor-inner .h5, .ls-block h5) {
+*:is(.editor-inner .uniline-block.h5, .editor-inner .h5, .ls-block h5) {
 	color: 					var(--cl-shark);
 	font-family: 			-apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;;
 	font-size: 				1em;
 	font-style: 			normal;
 	font-weight: 			500!important;
 }
-.dark-theme *:is(*:is(.editor-inner .h5, .ls-block h5)), html[data-theme=dark] *:is(*:is(.editor-inner .h5, .ls-block h5)) {
+.dark-theme *:is(*:is(.editor-inner .uniline-block.h5, .editor-inner .h5, .ls-block h5)), html[data-theme=dark] *:is(*:is(.editor-inner .uniline-block.h5, .editor-inner .h5, .ls-block h5)) {
 	color: 					var(--cl-white);
 }
 
-*:is(.editor-inner .h6, .ls-block h6) {
+*:is(.editor-inner .uniline-block.h6, .editor-inner .h6, .ls-block h6) {
 	color: 					var(--cl-shark);
 	font-family: 			-apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;;
 	font-size: 				1em;
 	font-style: 			normal;
 	font-weight: 			500!important;
 }
-.dark-theme *:is(*:is(.editor-inner .h6, .ls-block h6)), html[data-theme=dark] *:is(*:is(.editor-inner .h6, .ls-block h6)) {
+.dark-theme *:is(*:is(.editor-inner .uniline-block.h6, .editor-inner .h6, .ls-block h6)), html[data-theme=dark] *:is(*:is(.editor-inner .uniline-block.h6, .editor-inner .h6, .ls-block h6)) {
 	color: 					var(--cl-white);
 }
 
@@ -1168,6 +1180,15 @@ a.tag {
 	color: 					var(--cl-aqua);
 }
 
+input::selection {
+	background-color: 		var(--cl-tropical);
+	color: 					var(--cl-fadedblack);
+}
+.dark-theme input::selection,  html[data-theme=dark] input::selection {
+	background-color: 		var(--cl-fun);
+	color: 					var(--cl-white);
+}
+
 textarea::selection {
 	background-color: 		var(--cl-tropical);
 	color: 					var(--cl-fadedblack);
@@ -1298,11 +1319,11 @@ textarea::selection {
 	background-color: 		var(--cl-bunker);
 }
 
-.datepicker td.active, .datepicker td.active:hover {
+.datepicker td.active, .datepicker td.active:hover, .datepicker td.available.active:hover {
 	background-color: 		var(--cl-fadedwhite);
 	color: 					var(--cl-navy);
 }
-.dark-theme *:is(.datepicker td.active, .datepicker td.active:hover), html[data-theme=dark] *:is(.datepicker td.active, .datepicker td.active:hover) {
+.dark-theme *:is(.datepicker td.active, .datepicker td.active:hover, .datepicker td.available.active:hover), html[data-theme=dark] *:is(.datepicker td.active, .datepicker td.active:hover, .datepicker td.available.active:hover) {
 	background-color: 		var(--cl-bunker);
 	color: 					var(--cl-maya);
 }
@@ -2342,9 +2363,12 @@ a svg {
 }
 
 .ti-filter:hover {
+	background-color: 		var(--cl-);
+	border-radius: 			;
 	color: 					var(--cl-cornblue);
 }
 .dark-theme .ti-filter:hover,  html[data-theme=dark] .ti-filter:hover {
+	background-color: 		var(--cl-);
 	color: 					var(--cl-maya);
 }
 
@@ -2370,9 +2394,11 @@ a svg {
 }
 
 #right-sidebar .sidebar-item .close:hover {
+	background-color: 		var(--cl-);
 	opacity: 				1!important;
 }
 .dark-theme #right-sidebar .sidebar-item .close:hover,  html[data-theme=dark] #right-sidebar .sidebar-item .close:hover {
+	background-color: 		var(--cl-);
 }
 
 #right-sidebar .sidebar-item .close {
@@ -3083,6 +3109,22 @@ a svg {
 	color: 					var(--cl-white);
 }
 
+.cp__settings-inner .panel-wrap {
+	background-color: 		var(--cl-);
+	border-top: 			var(--cl-);
+	border-right: 			var(--cl-);
+	border-bottom: 			var(--cl-);
+	border-left: 			var(--cl-);
+	border-radius: 			;
+}
+.dark-theme .cp__settings-inner .panel-wrap,  html[data-theme=dark] .cp__settings-inner .panel-wrap {
+	background-color: 		var(--cl-);
+	border-top: 			var(--cl-);
+	border-right: 			var(--cl-);
+	border-bottom: 			var(--cl-);
+	border-left: 			var(--cl-);
+}
+
 .cp__settings-inner>article::-webkit-scrollbar-track {
 	background-color: 		var(--cl-fadedwhite);
 }
@@ -3515,17 +3557,6 @@ a svg {
 	border-bottom: 			1px solid var(--cl-ship);
 	border-left: 			1px solid var(--cl-ship);
 	color: 					var(--cl-white);
-}
-
-/* Fixes for block alignments */
-#lazy-blocks .flex.pr-2 {
-  justify-content: flex-start!important;
-  align-items: flex-start!important;
-}
-
-.block-content,
-textarea {
-  line-height: 24px;
 }
 
 /* Fixes for command palette and search */
